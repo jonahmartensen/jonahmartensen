@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First Website</title>
+  <title>My Basic Website</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      margin: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #0056b3;
+    }
+
+    section {
+      padding: 40px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
+
   <header>
-    <h1>My Personal Website</h1>
+    <h1>My Website</h1>
+    <p>Click the buttons below</p>
   </header>
 
-  <main>
-    <div>
-      <h2>About Me</h2>
-      <p>I am learning HTML step by step.</p>
-      <button>Say Hello</button>
-    </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div>
-      <h2>Contact Me</h2>
-      <form>
-        <label>Name:</label><br>
-        <input type="text"><br><br>
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my website.</p>
+  </section>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+  <section id="about">
+    <h2>About</h2>
+    <p>This page is about me.</p>
+  </section>
 
-        <input type="submit" value="Send">
-      </form>
-    </div>
-  </main>
+  <section id="services">
+    <h2>Services</h2>
+    <p>These are the services I offer.</p>
+  </section>
 
-  <footer>
-    <p>Made with HTML</p>
-  </footer>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Here are some of my projects.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can contact me here.</p>
+  </section>
+
 </body>
-
 </html>
