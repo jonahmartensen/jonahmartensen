@@ -1,39 +1,42 @@
+/* Reset basic spacing */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
+/* Navigation bar */
 header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px 18px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: #0056b3;
-}
-
-main {
-  padding: 40px;
   background-color: white;
-  margin: 20px;
-  border-radius: 5px;
-  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
 }
 
+/* Navigation links container */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Navigation links */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: font-style 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  font-style: italic;
+  color: #000;
+}
+
+/* Page content */
+main {
+  padding: 60px;
+  text-align: center;
+}
