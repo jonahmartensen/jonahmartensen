@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Basic Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation bar */
+    header {
+      background-color: #333;
+      padding: 15px;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px 15px;
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #777;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>My Website</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="home">
-    <h2>Home</h2>
+  <main>
+    <h1>Home</h1>
     <p>Welcome to my website.</p>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>This page is about me.</p>
-  </section>
-
-  <section id="services">
-    <h2>Services</h2>
-    <p>These are the services I offer.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Here are some of my projects.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>You can contact me here.</p>
-  </section>
+  </main>
 
 </body>
 </html>
