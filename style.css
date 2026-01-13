@@ -71,3 +71,37 @@ main {
 .contact-text {
   text-align: left;
 }
+
+/* Works sidebar */
+.works-sidebar {
+  position: fixed;
+  left: 30px;
+  top: 120px; /* below the navigation bar */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Sidebar buttons */
+.works-sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: font-style 0.2s ease;
+}
+
+/* Hover effect */
+.works-sidebar a:hover {
+  font-style: italic;
+}
+
+/* Active work page */
+.works-active {
+  font-style: italic;
+}
+
+/* Push main content away from sidebar */
+.works-content {
+  margin-left: 120px;
+}
+
