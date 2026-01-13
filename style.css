@@ -50,3 +50,24 @@ main {
   padding: 60px;
   text-align: center;
 }
+
+/* Contact page layout */
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Contact image */
+.contact-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Contact text */
+.contact-text {
+  text-align: left;
+}
