@@ -76,7 +76,7 @@ main {
 .works-sidebar {
   position: fixed;
   left: 30px;
-  top: 120px; /* pushes it below the navigation bar */
+  top: 420px; /* pushes it below the navigation bar */
   display: flex;
   flex-direction: column;
   gap: 20px;
