@@ -76,13 +76,13 @@ main {
 .works-sidebar {
   position: fixed;
   left: 30px;
-  top: 120px; /* below the navigation bar */
+  top: 120px; /* pushes it below the navigation bar */
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Sidebar buttons */
+/* Sidebar links */
 .works-sidebar a {
   text-decoration: none;
   color: #333;
@@ -95,13 +95,14 @@ main {
   font-style: italic;
 }
 
-/* Active work page */
+/* Active work */
 .works-active {
   font-style: italic;
 }
 
-/* Push main content away from sidebar */
+/* Push page content right */
 .works-content {
   margin-left: 120px;
 }
+
 
