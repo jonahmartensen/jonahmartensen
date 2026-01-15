@@ -90,7 +90,8 @@ main {
 }
 
 /* Works sidebar */
-.works-sidebar {
+.works-sidebar,
+.engagement-sidebar {
   position: fixed;
   left: 30px;
   top: 205px; /* pushes it below the navigation bar */
@@ -100,7 +101,8 @@ main {
 }
 
 /* Sidebar links */
-.works-sidebar a {
+.works-sidebar a,
+.engagement-sidebar a{
   text-decoration: none;
   color: #333;
   font-size: 34px;
@@ -108,17 +110,20 @@ main {
 }
 
 /* Hover effect */
-.works-sidebar a:hover {
+.works-sidebar a:hover
+.engagement-sidebar a:hover {
   font-style: italic;
 }
 
 /* Active work */
-.works-active {
+.works-active
+.engagement-active{
   font-style: italic;
 }
 
 /* Push page content right */
-.works-content {
+.works-content
+.engagement-content{
   margin-left: 220px;
 }
 
