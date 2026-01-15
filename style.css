@@ -62,7 +62,9 @@ main {
 
 /* Contact image */
 .contact-container img {
-  width: 250px;
+  position: fixed;
+  top: 205px;
+  width: 550px;
   height: auto;
   border-radius: 5px;
 }
