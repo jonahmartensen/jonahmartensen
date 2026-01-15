@@ -133,6 +133,7 @@ main {
 }
 
 .about-text {
+  font-size: 26px;
   left: 230px;
   text-align: left;
 }
