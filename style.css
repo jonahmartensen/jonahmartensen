@@ -9,7 +9,6 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  border-bottom: 4px solid #e0e0e0;
   padding: 20px 30px;
 }
 
@@ -30,6 +29,7 @@ nav {
 /* Nav links */
 nav a {
   text-decoration: none;
+  text-align: left;
   color: #333;
   font-size: 34px;
   transition: font-style 0.2s ease;
