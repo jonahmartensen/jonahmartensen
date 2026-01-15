@@ -112,8 +112,12 @@ main {
   font-style: italic;
 }
 
-.engagement-number {
-  font-size: 20px;
+.big {
+  font-size: 34px;
+}
+
+.small {
+  font-size: 16px;
 }
 
 /* Active work */
