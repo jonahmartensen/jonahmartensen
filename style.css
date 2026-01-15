@@ -90,36 +90,31 @@ main {
 }
 
 /* Works sidebar */
-.works-sidebar,
-.engagement-sidebar {
+.sidebar {
   position: fixed;
   left: 30px;
-  top: 205px; /* pushes it below the navigation bar */
+  top: 205px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: left;
 }
 
-}
-
 /* Sidebar links */
-.works-sidebar a,
-.engagement-sidebar a{
+.sidebar a {
   text-decoration: none;
   color: #333;
   font-size: 34px;
   transition: font-style 0.2s ease;
 }
 
-/* Hover effect */
-.works-sidebar a:hover
-.engagement-sidebar a:hover {
+.sidebar a:hover {
   font-style: italic;
 }
 
+
 /* Active work */
-.works-active
+.works-active,
 .engagement-active{
   font-style: italic;
 }
