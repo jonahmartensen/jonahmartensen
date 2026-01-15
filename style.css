@@ -55,6 +55,7 @@ main {
 .contact-container {
   display: flex;
   align-items: center;
+  left: 80px;
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
@@ -79,6 +80,7 @@ main {
   top: 205px;
   width: 280px;
   height: auto;
+  left: 80px;
   border-radius: 5px;
 }
 
