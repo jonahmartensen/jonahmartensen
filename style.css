@@ -135,6 +135,34 @@ main {
   text-align: left;
 }
 
+.contact-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-layout img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    flex-direction: column;
+  }
+
+  .contact-layout img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
 /* Works sidebar */
 .sidebar {
   position: fixed;
