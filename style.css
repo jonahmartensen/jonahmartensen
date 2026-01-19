@@ -47,13 +47,18 @@ nav a:hover {
 
 /* Page content */
 main {
+  padding: 0;
+}
+
+.about-page,
+.contact-page,
+.works-content {
   padding: 60px;
-  text-align: center;
 }
 
 .gallery {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 40px;
 
@@ -62,6 +67,7 @@ main {
   grid-auto-rows: 250px;
   gap: 20px;
 }
+
 
 .gallery-item {
   position: relative;
