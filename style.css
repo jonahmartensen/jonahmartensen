@@ -111,16 +111,16 @@ main {
 
 /* === Example positioning: manually place images === */
 .item-1 { top: 5%; left: 5%; width: 28%; }
-.item-2 { top: 10%; left: 40%; width: 25%; }
+.item-2 { top: 20%; left: 40%; width: 25%; }
 .item-3 { top: 8%; right: 5%; width: 30%; }
 
-.item-4 { top: 40%; left: 5%; width: 28%; }
-.item-5 { top: 45%; left: 38%; width: 25%; }
-.item-6 { top: 42%; right: 5%; width: 30%; }
+.item-4 { top: 80%; left: 5%; width: 28%; }
+.item-5 { top: 55%; left: 38%; width: 25%; }
+.item-6 { top: 92%; right: 5%; width: 30%; }
 
-.item-7 { top: 70%; left: 5%; width: 28%; }
-.item-8 { top: 72%; left: 38%; width: 25%; }
-.item-9 { top: 68%; right: 5%; width: 30%; }
+.item-7 { top: 120%; left: 5%; width: 28%; }
+.item-8 { top: 102%; left: 38%; width: 25%; }
+.item-9 { top: 140%; right: 5%; width: 30%; }
 
 /* === Responsive for mobile === */
 @media (max-width: 768px) {
