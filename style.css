@@ -62,32 +62,32 @@ main {
   padding: 60px;
 }
 
-/* Free placement layout container */
 .free-layout {
   position: relative;
-  width: 100vw;
-  height: 820vh; /* taller than viewport to allow vertical placement */
-  overflow: hidden;
+  width: 100%;
+  overflow: visible;
 }
 
-/* Free placement images */
 .free-item {
   position: absolute;
   display: block;
+  width: 25%;
+  transform: scale(1.05);
+  transition: transform 0.3s ease; /* optional hover scaling */
 }
 
 .free-item img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
-/* Overlay hover effect */
-.free-item .overlay {
+/* Overlay appears on hover */
+.overlay {
   position: absolute;
-  bottom: -100%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -95,45 +95,32 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: bottom 0.3s ease;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
 }
 
 .free-item:hover .overlay {
-  bottom: 0;
+  opacity: 1;
+  transition: none;
 }
 
-.free-item .overlay p {
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-}
+/* Independent positioning + scaling */
+.item-1 { top: 5%; left: 5%; width: 28%; transform: scale(1.6); }
+.item-2 { top: 15%; left: 40%; width: 25%; transform: scale(0.4); }
+.item-3 { top: 8%; right: 5%; width: 30%; transform: scale(1); }
 
-/* === Example positioning: manually place images === */
-.item-1 { top: 5%; left: 5%; width: 28%; }
-.item-2 { top: 20%; left: 40%; width: 25%; }
-.item-3 { top: 328%; right: 5%; width: 80%; }
-
-.item-4 { top: 80%; left: 5%; width: 28%; }
-.item-5 { top: 55%; left: 38%; width: 25%; }
-.item-6 { top: 92%; right: 5%; width: 30%; }
-
-.item-7 { top: 120%; left: 5%; width: 28%; }
-.item-8 { top: 102%; left: 38%; width: 25%; }
-.item-9 { top: 440%; right: 5%; width: 30%; }
-
-/* === Responsive for mobile === */
+/* Responsive for mobile */
 @media (max-width: 768px) {
-  .free-layout {
-    height: auto;
-  }
-
   .free-item {
     position: static;
     width: 100% !important;
     margin-bottom: 30px;
+    transform: scale(1);
   }
 }
+
 
 /* Contact page layout */
 .contact-container {
