@@ -205,11 +205,21 @@ main {
 }
 
 
+:root {
+  --sidebar-width: 220px;
+}
+
+.page-with-sidebar {
+  margin-left: calc(var(--sidebar-width) + 40px);
+  padding: 60px;
+}
+
 /* Works sidebar */
 .sidebar {
   position: fixed;
   left: 30px;
   top: 205px;
+  width: var(--sidebar-width);
   display: flex;
   flex-direction: column;
   gap: 20px;
