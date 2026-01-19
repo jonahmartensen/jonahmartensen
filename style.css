@@ -62,60 +62,83 @@ main {
   padding: 60px;
 }
 
-.gallery {
-  width: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 40px;
-
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-auto-rows: 250px;
-  gap: 20px;
-}
-
-.gallery-item {
+/* Free placement layout container */
+.free-layout {
   position: relative;
+  width: 100vw;
+  height: 120vh; /* taller than viewport to allow vertical placement */
   overflow: hidden;
 }
 
-.gallery-item img {
+/* Free placement images */
+.free-item {
+  position: absolute;
+  display: block;
+}
+
+.free-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
   object-fit: cover;
 }
 
-.gallery-item.vertical {
-  grid-row: span 2;
+/* Overlay hover effect */
+.free-item .overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.3s ease;
 }
 
-.gallery-item.horizontal {
-  grid-column: span 3;
-}
-
-.gallery-item:hover .overlay {
+.free-item:hover .overlay {
   bottom: 0;
 }
 
-@media (max-width: 1024px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+.free-item .overlay p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* === Example positioning: manually place images === */
+.item-1 { top: 5%; left: 5%; width: 28%; }
+.item-2 { top: 10%; left: 40%; width: 25%; }
+.item-3 { top: 8%; right: 5%; width: 30%; }
+
+.item-4 { top: 40%; left: 5%; width: 28%; }
+.item-5 { top: 45%; left: 38%; width: 25%; }
+.item-6 { top: 42%; right: 5%; width: 30%; }
+
+.item-7 { top: 70%; left: 5%; width: 28%; }
+.item-8 { top: 72%; left: 38%; width: 25%; }
+.item-9 { top: 68%; right: 5%; width: 30%; }
+
+/* === Responsive for mobile === */
+@media (max-width: 768px) {
+  .free-layout {
+    height: auto;
   }
 
-  .gallery-item.vertical,
-  .gallery-item.horizontal {
-    grid-column: span 1;
-    grid-row: span 1;
+  .free-item {
+    position: static;
+    width: 100% !important;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-}
 
+.free-item:hover .overlay {
+  bottom: 0;
+}
 
 .overlay {
   position: absolute;
