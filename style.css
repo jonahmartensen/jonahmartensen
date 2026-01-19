@@ -52,6 +52,9 @@ main {
 
 .about-page {
   padding: 130px;
+  font-size: 26px;
+  margin-left: 150px;
+  text-align: left;
 }
 
 .contact-page,
@@ -243,12 +246,6 @@ main {
 .works-content
 .engagement-content{
   margin-left: 220px;
-}
-
-.about-page {
-  font-size: 26px;
-  margin-left: 150px;
-  text-align: left;
 }
   
 
