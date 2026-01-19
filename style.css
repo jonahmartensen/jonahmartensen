@@ -234,24 +234,9 @@ main {
   font-style: italic;
 }
 
-.big {
-  font-size: 34px;
-}
-
-.small {
-  font-size: 16px;
-}
-
 /* Active work */
 .works-active,
 .engagement-active{
   font-style: italic;
 }
-
-/* Push page content right */
-.works-content
-.engagement-content{
-  margin-left: 220px;
-}
-  
 
