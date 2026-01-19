@@ -50,7 +50,10 @@ main {
   padding: 20px;
 }
 
-.about-page,
+.about-page {
+  padding: 130px;
+}
+
 .contact-page,
 .works-content {
   padding: 60px;
