@@ -66,14 +66,13 @@ main {
   position: relative;
   width: 100%;
   overflow: visible;
+  min-height: 300vh;
 }
 
 .free-item {
   position: absolute;
   display: block;
-  width: 25%;
-  transform: scale(1.05);
-  transition: transform 0.3s ease; /* optional hover scaling */
+  transform-origin: center;
 }
 
 .free-item img {
@@ -81,7 +80,6 @@ main {
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 5px;
 }
 
 /* Overlay appears on hover */
@@ -107,23 +105,81 @@ main {
 }
 
 /* Independent positioning + scaling */
-.item-1 { top: 215%; left: 5%; width: 30%; transform: scale(1); }
-.item-2 { top: 35%; left: 40%; width: 10%; transform: scale(1); }
-.item-3 { top: 15%; right: 5%; width: 30%; transform: scale(1); }
-.item-4 { top: 55%; left: 5%; width: 30%; transform: scale(1); }
-.item-5 { top: 75%; left: 40%; width: 30%; transform: scale(1); }
-.item-6 { top: 55%; right: 5%; width: 30%; transform: scale(1); }
-.item-7 { top: 95%; left: 5%; width: 30%; transform: scale(1); }
+.item-1 {
+  top: 5%;
+  left: 6%;
+  width: 28%;
+}
+
+.item-2 {
+  top: 18%;
+  left: 40%;
+  width: 24%;
+}
+
+.item-3 {
+  top: 8%;
+  right: 6%;
+  width: 30%;
+}
+
+.item-4 {
+  top: 45%;
+  left: 5%;
+  width: 28%;
+}
+
+.item-5 {
+  top: 52%;
+  left: 38%;
+  width: 24%;
+}
+
+.item-6 {
+  top: 48%;
+  right: 6%;
+  width: 30%;
+}
+
+.item-7 {
+  top: 78%;
+  left: 6%;
+  width: 28%;
+}
+
+.item-8 {
+  top: 85%;
+  left: 40%;
+  width: 24%;
+}
+
+.item-9 {
+  top: 75%;
+  right: 6%;
+  width: 30%;
+}
+
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
+  .free-layout {
+    min-height: auto;
+    padding: 20px;
+  }
+
   .free-item {
     position: static;
     width: 100% !important;
-    margin-bottom: 30px;
     transform: scale(1);
+    margin-bottom: 30px;
+  }
+
+  .overlay {
+    opacity: 1;
+    background: rgba(0,0,0,0.4);
   }
 }
+
 
 
 /* Contact page layout */
