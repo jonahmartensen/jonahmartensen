@@ -107,9 +107,13 @@ main {
 }
 
 /* Independent positioning + scaling */
-.item-1 { top: 5%; left: 5%; width: 28%; transform: scale(1.6); }
-.item-2 { top: 15%; left: 40%; width: 25%; transform: scale(0.4); }
-.item-3 { top: 8%; right: 5%; width: 30%; transform: scale(1); }
+.item-1 { top: 15%; left: 5%; width: 30%; transform: scale(1); }
+.item-2 { top: 35%; left: 40%; width: 10%; transform: scale(1); }
+.item-3 { top: 15%; right: 5%; width: 30%; transform: scale(1); }
+.item-4 { top: 55%; left: 5%; width: 30%; transform: scale(1); }
+.item-5 { top: 75%; left: 40%; width: 30%; transform: scale(1); }
+.item-6 { top: 55%; right: 5%; width: 30%; transform: scale(1); }
+.item-7 { top: 95%; left: 5%; width: 30%; transform: scale(1); }
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
