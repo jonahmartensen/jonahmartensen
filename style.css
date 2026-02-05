@@ -132,7 +132,7 @@ nav a:hover {
 ======================= */
 
 :root {
-  --sidebar-width: 220px;
+  --sidebar-width: 500px;
 }
 
 .page-with-sidebar {
