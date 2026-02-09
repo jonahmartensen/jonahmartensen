@@ -165,6 +165,46 @@ nav a:hover {
   font-style: italic;
 }
 
+.page-with-sidebar {
+  display: flex;
+}
+
+/* Preview container */
+.hover-preview {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+  width: 320px;
+  pointer-events: none;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hover-preview img {
+  width: 100%;
+  display: block;
+}
+
+.preview-text {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Active state */
+.hover-preview.visible {
+  opacity: 1;
+}
+
+.hover-preview.visible .preview-text {
+  opacity: 1;
+}
+
+
 
 /* =======================
    TEXT PAGES
