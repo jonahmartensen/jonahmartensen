@@ -207,6 +207,23 @@ nav a:hover {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .hover-preview {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  .hover-preview img {
+    width: clamp(220px, 80vw, 90vw);
+  }
+
+  .preview-text {
+    text-align: center;
+  }
+}
+
+
 
 
 /* =======================
