@@ -7,6 +7,10 @@ links.forEach(link => {
   link.addEventListener('mouseenter', () => {
     img.src = link.dataset.image;
     text.textContent = link.dataset.text;
+
+    const scale = link.dataset.scale || 1;
+    img.style.transform = `scale(${scale})`;
+
     preview.classList.add('visible');
   });
 
@@ -14,3 +18,4 @@ links.forEach(link => {
     preview.classList.remove('visible');
   });
 });
+
