@@ -7,37 +7,122 @@
 
 <body>
 
-  <header>
-    <nav>
-      <div class="nav-left">
-        <a href="index.html">jonah martensen</a>
-      </div>
+<header>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">jonah martensen</a>
+    </div>
 
-      <div class="nav-right">
-        <a href="works.html" class="active">works</a>
-        <a href="about.html">about</a>
-        <a href="contact.html">contact</a>
-      </div>
-    </nav>
-  </header>
+    <div class="nav-right">
+      <a href="works.html" class="active">works</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </nav>
+</header>
 
-  <main class="page-with-sidebar">
+<main class="page-with-sidebar">
+
+  <div class="hover-preview">
+  <img src="" alt="">
+  <p class="preview-text"></p>
+</div>
+
 
   <div class="sidebar works-sidebar">
-    <a href="to lay a track.html">to lay a track</a>
-    <a href="the laughing dove.html">the laughing dove</a>
-    <a href="never.html">never never land</a>
-    <a href="exercises.html">exercises on forbidden imagery</a>
-    <a href="studio14.html">studio 14</a>
-     <a href="rosaalbarubea.html">ROSA ALBA, ROSA RUBEA</a>
-     <a href="drcrycry.html">dr. crycry</a>
-     <a href="wirsindzwei.html">wir sind zwei</a>
-    <a href="keller.html">keller</a>
-    <a href="kleidertanz.html">kleidertanz</a>
-    <a href="horizont.html">horizont, da sitzt ein kolkrabe und</a>
+    <a href="to lay a track.html"
+       data-image="images/to-lay-a-track.jpg"
+       data-text="Sound, labor, and repetition.">
+       to lay a track
+    </a>
+
+    <a href="the laughing dove.html"
+       data-image="images/the-laughing-dove.jpg"
+       data-text="Voice as residue and return.">
+       the laughing dove
+    </a>
+
+    <a href="never.html"
+       data-image="images/never-never-land.jpg"
+       data-text="An impossible geography.">
+       never never land
+    </a>
+
+    <a href="exercises.html"
+       data-image="images/exercises-forbidden-imagery.jpg"
+       data-text="Fragments against the image.">
+       exercises on forbidden imagery
+    </a>
+
+    <a href="studio14.html"
+       data-image="images/studio-14.jpg"
+       data-text="Work as spatial condition.">
+       studio 14
+    </a>
+
+    <a href="rosaalbarubea.html"
+       data-image="images/rosa-alba-rosa-rubea.jpg"
+       data-text="A study in repetition and naming.">
+       ROSA ALBA, ROSA RUBEA
+    </a>
+
+    <a href="drcrycry.html"
+       data-image="images/dr-crycry.jpg"
+       data-text="Persona, echo, and collapse.">
+       dr. crycry
+    </a>
+
+    <a href="wirsindzwei.html"
+       data-image="images/wir-sind-zwei.jpg"
+       data-text="Togetherness as fracture.">
+       wir sind zwei
+    </a>
+
+    <a href="keller.html"
+       data-image="images/keller.jpg"
+       data-text="Subterranean memory.">
+       keller
+    </a>
+
+    <a href="kleidertanz.html"
+       data-image="images/kleidertanz.jpg"
+       data-text="Movement without bodies.">
+       kleidertanz
+    </a>
+
+    <a href="horizont.html"
+       data-image="images/horizont-kolkrabe.jpg"
+       data-text="A horizon interrupted.">
+       horizont, da sitzt ein kolkrabe und
+    </a>
+  </div>
+
+  <!-- single shared hover preview -->
+  <div class="hover-preview">
+    <img src="" alt="">
+    <p class="preview-text"></p>
   </div>
 
 </main>
+
+<script>
+  const preview = document.querySelector('.hover-preview');
+  const img = preview.querySelector('img');
+  const text = preview.querySelector('.preview-text');
+  const links = document.querySelectorAll('.works-sidebar a');
+
+  links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      img.src = link.dataset.image;
+      text.textContent = link.dataset.text;
+      preview.classList.add('visible');
+    });
+
+    link.addEventListener('mouseleave', () => {
+      preview.classList.remove('visible');
+    });
+  });
+</script>
 
 </body>
 </html>
