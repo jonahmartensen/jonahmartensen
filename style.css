@@ -172,10 +172,8 @@ nav a:hover {
 /* Preview container */
 .hover-preview {
   position: fixed;
-  top: 50%;
-  left: 55%;
-  transform: translateY(-50%);
-  width: 320px;
+  bottom: 15%;
+  right: 20%;
   pointer-events: none;
 
   opacity: 0;
@@ -183,9 +181,11 @@ nav a:hover {
 }
 
 .hover-preview img {
-  width: 100%;
   display: block;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease;
 }
+
 
 .preview-text {
   margin-top: 12px;
