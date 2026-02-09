@@ -181,10 +181,13 @@ nav a:hover {
 }
 
 .hover-preview img {
-  display: block;
+  width: clamp(180px, 25vw, 420px);
+  height: auto;
+
   transform-origin: bottom right;
   transition: transform 0.4s ease;
 }
+
 
 
 .preview-text {
