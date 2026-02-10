@@ -183,8 +183,6 @@ nav a:hover {
   opacity: 1;
 }
 
-}
-
 .hover-preview img {
   width: clamp(180px, 25vw, 420px);
   height: auto;
