@@ -23,6 +23,20 @@
 
 <main class="page-with-sidebar">
 
+  <script>
+  const preloadImages = () => {
+    const links = document.querySelectorAll('.works-sidebar a');
+
+    links.forEach(link => {
+      const img = new Image();
+      img.src = link.dataset.image;
+    });
+  };
+
+  window.addEventListener('load', preloadImages);
+</script>
+
+
   <div class="hover-preview">
   <img src="" alt="">
   <p class="preview-text"></p>
