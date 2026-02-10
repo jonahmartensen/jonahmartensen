@@ -5,24 +5,6 @@ const links = document.querySelectorAll('.works-sidebar a');
 
 const baseScale = 1;
 
-links.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    const scale = parseFloat(link.dataset.scale) || 1;
-
-    img.src = link.dataset.image;
-    img.style.transform = `scale(${scale})`;
-    text.textContent = link.dataset.text;
-
-    preview.classList.add('visible');
-  });
-
-  link.addEventListener('mouseleave', () => {
-    preview.classList.remove('visible');
-  });
-});
-
-
-
 const isTouch = window.matchMedia('(hover: none)').matches;
 
 links.forEach(link => {
