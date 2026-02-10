@@ -6,15 +6,13 @@ const links = document.querySelectorAll('.works-sidebar a');
 const baseScale = 1;
 
 links.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    img.src = link.dataset.image;
-    text.textContent = link.dataset.text;
+link.addEventListener('mouseenter', () => {
+  img.style.transform = `scale(${parseFloat(link.dataset.scale) || 1})`;
+  img.src = link.dataset.image;
+  text.textContent = link.dataset.text;
 
-    const scale = parseFloat(link.dataset.scale) || 1;
-    img.style.transform = `scale(${baseScale * scale})`;
-
-    preview.classList.add('visible');
-  });
+  preview.classList.add('visible');
+});
 
   link.addEventListener('mouseleave', () => {
     preview.classList.remove('visible');
