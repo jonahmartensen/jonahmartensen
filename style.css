@@ -175,9 +175,14 @@ nav a:hover {
   bottom: 10%;
   right: 10%;
   pointer-events: none;
-
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
+}
+
+.hover-preview.visible {
+  opacity: 1;
+}
+
 }
 
 .hover-preview img {
@@ -185,7 +190,7 @@ nav a:hover {
   height: auto;
 
   transform-origin: bottom right;
-  transition: transform 0.4s ease;
+  transition: none;
 }
 
 
