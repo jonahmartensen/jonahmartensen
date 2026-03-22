@@ -226,8 +226,45 @@ nav a:hover {
   }
 }
 
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
 
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.project-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-text {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.project-text h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.project-text p {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-text {
+    font-size: 18px;
+  }
+}
 
 /* =======================
    TEXT PAGES
