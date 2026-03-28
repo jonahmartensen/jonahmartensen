@@ -176,7 +176,6 @@ nav a:hover {
   right: 10%;
 
   display: inline-block;
-  width: fit-content; /* shrink to image width */
 
   pointer-events: none;
   opacity: 0;
@@ -192,28 +191,24 @@ nav a:hover {
   display: block;
   width: clamp(180px, 25vw, 420px);
   height: auto;
-
-  transform-origin: bottom right;
 }
 
 /* Text BELOW image */
 .preview-text {
-  position: static;        /* KEY CHANGE */
-
-  width: 100%;             /* match image width */
-  max-width: 100%;
-
   margin-top: 8px;
+
+  width: 100%;
+  max-width: 100%;
 
   font-size: 0.9rem;
   line-height: 1.4;
 
-  text-align: right;       /* anchor to bottom-right visually */
-  white-space: normal;     /* allow wrapping */
-  word-wrap: break-word;
+  text-align: right;
 
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  /* 🔥 THE IMPORTANT PART */
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Active state */
