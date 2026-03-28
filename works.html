@@ -23,20 +23,6 @@
 
 <main class="page-with-sidebar">
 
-  <script>
-  const preloadImages = () => {
-    const links = document.querySelectorAll('.works-sidebar a');
-
-    links.forEach(link => {
-      const img = new Image();
-      img.src = link.dataset.image;
-    });
-  };
-
-  window.addEventListener('load', preloadImages);
-</script>
-
-
   <div class="hover-preview">
   <img src="" alt="">
   <p class="preview-text"></p>
@@ -54,14 +40,14 @@
     
     <a href="to lay a track.html"
        data-image="images/tolayatrackprague2.jpg"
-       data-text="an investiagtion into violent gazes and the power of queer union"
+       data-text="an investigation into violent gazes and the power of queer union"
        data-scale="1.9">
        to lay a track
     </a>
 
     <a href="the laughing dove.html"
        data-image="images/thelaughingdove2.jpg"
-       data-text="my becoming, my now, and the asking of HOW WILL I TOMOROW"
+       data-text="my becoming, my now, and the asking of HOW WILL I TOMORROW"
        data-scale="1.1">
        the laughing dove
     </a>
@@ -96,8 +82,7 @@
 
     <a href="drcrycry.html"
  data-image="images/drcrycry1.jpg"
-       data-text="and the doctor came to planet earth for the humans had forgotten
-      how to cry; he came to teach them"
+       data-text="and the doctor came to planet earth for the humans had forgotten how to cry; he came to teach them"
        data-scale="1.4">
        dr. crycry
     </a>
@@ -131,15 +116,23 @@
     </a>
   </div>
 
-  <!-- single shared hover preview -->
-  <div class="hover-preview">
-    <img src="" alt="">
-    <p class="preview-text"></p>
-  </div>
-
 </main>
 
-<script src="script.js"></script>
+<script>
+  const preloadImages = () => {
+    const links = document.querySelectorAll('.works-sidebar a');
 
+    links.forEach(link => {
+      const img = new Image();
+      img.src = link.dataset.image;
+    });
+  };
+
+  window.addEventListener('load', preloadImages);
+</script>
+
+<script src="script.js"></script>
+  
 </body>
+
 </html>
