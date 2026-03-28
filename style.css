@@ -243,12 +243,16 @@ nav a:hover {
 }
 
 .project-hero img {
+  position: fixed;
+  left: 30px;
   width: 100%;
   height: auto;
   display: block;
 }
 
 .project-text {
+  position: fixed;
+  left: 30px;
   font-size: 20px;
   line-height: 1.6;
 }
