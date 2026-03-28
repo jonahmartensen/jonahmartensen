@@ -188,6 +188,9 @@ nav a:hover {
 
 /* Image */
 .hover-preview img {
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
   display: block;
   width: clamp(180px, 25vw, 420px);
   height: auto;
