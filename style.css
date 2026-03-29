@@ -172,11 +172,12 @@ nav a:hover {
 /* Preview container */
 .hover-preview {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  transform: translate(-120px, -120px);
+  bottom: 120px;
+  right: 120px;
 
   display: inline-block;
+  width: fit-content;
+  height: fit-content;
 
   pointer-events: none;
   opacity: 0;
@@ -192,6 +193,7 @@ nav a:hover {
   display: block;
   width: clamp(180px, 25vw, 420px);
   height: auto;
+  vertical-align: bottom;
 }
 
 /* Text BELOW image */
@@ -205,6 +207,7 @@ nav a:hover {
   line-height: 1.4;
 
   text-align: right;
+  display: block;
 
   /* 🔥 THE IMPORTANT PART */
   white-space: normal;
