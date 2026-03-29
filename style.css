@@ -172,8 +172,9 @@ nav a:hover {
 /* Preview container */
 .hover-preview {
   position: fixed;
-  bottom: 190px;
-  right: 230px;
+  bottom: 0;
+  right: 0;
+  transform: translate(-120px, -120px);
 
   display: inline-block;
 
@@ -188,9 +189,6 @@ nav a:hover {
 
 /* Image */
 .hover-preview img {
-  position: fixed;
-  right: 230px;
-  bottom: 90px;
   display: block;
   width: clamp(180px, 25vw, 420px);
   height: auto;
