@@ -237,6 +237,8 @@ nav a:hover {
 }
 
 .project-content {
+  position: fixed;
+  left: 230px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -247,7 +249,7 @@ nav a:hover {
 
 .project-hero img {
   position: fixed;
-  left: 30px;
+  left: 230px;
   width: 100%;
   height: auto;
   display: block;
@@ -255,7 +257,7 @@ nav a:hover {
 
 .project-text {
   position: fixed;
-  left: 30px;
+  left: 230px;
   font-size: 20px;
   line-height: 1.6;
 }
