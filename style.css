@@ -255,11 +255,15 @@ nav a:hover {
 }
 
 .project-text h1 {
+    position: fixed;
+  left: 230px;
   font-size: 28px;
   margin-bottom: 20px;
 }
 
 .project-text p {
+    position: fixed;
+  left: 230px;
   margin-bottom: 16px;
 }
 
